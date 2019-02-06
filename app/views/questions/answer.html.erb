@@ -1,0 +1,18 @@
+<div class="banner text-center">
+  <h1>Stupid Coaching</h1>
+  <div class="section">
+    <p>
+      <% if @question.blank? %>
+        😶
+      <% else %>
+        <%= @question %>
+      <% end %>
+    </p>
+    <p><i><%="-You" %></i></p>
+  </div>
+  <div class="section">
+    <p><strong><%=  @answer %></strong> </p>
+    <p><i><%= "-Your Coach" %></i></p>
+  </div>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
